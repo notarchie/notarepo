@@ -38,7 +38,7 @@ void on_cleanup()
 
 int main(int argc, char* args[])
 {
-	util::sdl_initialize("Introduction Game (C++/SDL)", 800, 600);
+	util::sdl_initialize("rastacllaut)", 800, 600);
 
 	on_load();
 	SDL_SetWindowIcon(util::sdl_window, icon);
