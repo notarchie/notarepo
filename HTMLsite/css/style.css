@@ -1,0 +1,40 @@
+#header
+{
+	background: aqua;
+	height: 3rem;
+	
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: blue;
+	
+	font-family: coolvetica;
+	font-size: 32;
+}
+
+.normaltext
+{
+	font-family: coolvetica;
+	font-size: 22;
+	color: rgb(100, 0, 150);
+	
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(100, 100, 255);
+	
+	padding: 5px;
+	background: rgb(200, 200, 255);
+}
+
+.img
+{
+	border-width: 2px;	
+	border-style: solid;
+	border-color: gray;
+}
+
+.body 
+{
+	background: url("C:\Users\Archie\Desktop\BU\HTMLsite\pixelartforest.jpg") no-repeat fixed center;
+	background-image: url("pixelartforest.jpg");
+	background-color: #cccccc;
+}
