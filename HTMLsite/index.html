@@ -4,14 +4,48 @@
 		<title>Welcome!</title>
 		<link rel="stylesheet" href="css/style.css">
  
+		<script>
+			function show(id)
+			{
+				hideall();
+				var div = document.getElementById(id);
+				div.style.display = "block";
 
+			}
+			
+			function hide(id)
+			{
+				var div = document.getElementById(id);
+				div.style.display = "none";
+				
+			}
+			
+			function hideall()
+			{
+				hide("projects");
+				hide("contact");
+			}
+			
+		</script>
 	</head>
  
 	<body>
-	
+		<div id="body">
+		</div>
 		
 		<div id="header" style="float:right">
-			<a href="index.html">Home</a> | <a href="contact.html">Contact</a> | <a href="CV.html">CV </a> | <a href="projects.html">Projects</a>
+			<a href="index.html">
+			<img src="images/buttons/homeButton.png"></img>
+			</a>
+			<a onclick=show("contact")>
+			<img src="images/buttons/contactButton.png"></img>
+			</a>
+			<a href="#">
+			<img src="images/buttons/cvButton.png"></img>
+			</a>
+			<a  onclick=show("projects")>
+			<img src="images/buttons/projectButton.png"></img>
+			</a>
 		</div>
 	
 		<div id="header">
@@ -21,8 +55,21 @@
 				
 			</h1>
 			
+		</div>
+		<div  id="projects" style="display: none; background: orange; border-bottom:1px solid black;">
+			<img src="images/buttons/projectButton.png" style="height: 50px">
+			<img src="images/buttons/projectButton.png" style="height: 50px">
+			<div style="float:right">	
+				<a onclick=hide("projects") href="#">Close</a>
+			</div>
+		</div>
 		
-
+		<div  id="contact" style="display: none; background: purple; border-bottom:1px solid black;">
+			<img src="images/buttons/contactButton.png" style="height: 50px">
+			<img src="images/buttons/contactButton.png" style="height: 50px">
+			<div style="float:right">	
+				<a onclick=hide("contact") href="#">Close</a>
+			</div>
 		</div>
 		
 		<p class="normaltext">Hello and welcome!</p>
