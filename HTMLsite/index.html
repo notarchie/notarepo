@@ -31,23 +31,29 @@
  
 	<body>
 		<div id="body">
-		</div>
 		
-		<div id="header" style="float:right">
-			<a href="index.html">
-			<img src="images/buttons/homeButton.png"></img>
-			</a>
-			<a onclick=show("contact")>
-			<img src="images/buttons/contactButton.png"></img>
-			</a>
-			<a href="#">
-			<img src="images/buttons/cvButton.png"></img>
-			</a>
-			<a  onclick=show("projects")>
-			<img src="images/buttons/projectButton.png"></img>
-			</a>
+			<div id="menubar" style="float:right;">
+				<a onclick=show("header") href="#" onmouseout=hide()>
+					Menu bar
+				</a>
+			</div>
+
+			<div id="header" style="display:none; float:right;">
+				<a href="index.html">
+				<img src="images/buttons/homeButton.png"></img>
+				</a>
+				<a onclick=show("contact")>
+				<img src="images/buttons/contactButton.png"></img>
+				</a>
+				<a href="#">
+				<img src="images/buttons/cvButton.png"></img>
+				</a>
+				<a  onclick=show("projects")>
+				<img src="images/buttons/projectButton.png"></img>
+				</a>
+			</div>
 		</div>
-	
+
 		<div id="header">
 			
 			<h1 id="header">
@@ -56,6 +62,7 @@
 			</h1>
 			
 		</div>
+
 		<div  id="projects" style="display: none; background: orange; border-bottom:1px solid black;">
 			<img src="images/buttons/projectButton.png" style="height: 50px">
 			<img src="images/buttons/projectButton.png" style="height: 50px">
