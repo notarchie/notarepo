@@ -32,15 +32,48 @@
 
 body 
 {
-	background-color: 3C7A89;
+	background-color: C5D5EA;
 	color: FFFFF2;
 }
 
+#bodyBacking
+{
+	width: auto;
+	height: auto;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 4em;
+	padding-top: 4em;
+	background-color: 759EB8;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}	
+
+.gridContainer
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+	background-color: 2E4052;
+	padding: 10px;
+	
+}
+
+.gridContainer > div
+{
+	height: auto;
+	width: auto;
+	background-color: rgb(46,64,82);
+	text-align: center;
+	padding: 2%;
+	font-size: 30px;
+}
 /* Style the navbar */
 #menubar {
 	overflow: hidden;
-	background-color: 41D3BD;
-  
+	background-color: 759EB8;
 	font-family: coolvetica;
 	font-size: 32;
 	color: FFFFF2;
@@ -64,14 +97,14 @@ body
 }
 /* Page content */
 .content {
-	padding: 16px;
+	padding: 2%;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 95%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */

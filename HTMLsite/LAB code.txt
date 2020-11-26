@@ -1,0 +1,45 @@
+<!-- <div  id="projects" style="display: none; background: orange; border-bottom:1px solid black;">
+			<img src="images/buttons/projectButton.png" style="height: 50px">
+			<img src="images/buttons/projectButton.png" style="height: 50px">
+			<div style="float:right">	
+				<a onclick=hide("projects") href="#">Close</a>
+			</div>
+		</div>
+		
+		<div  id="contact" style="display: none; background: purple; border-bottom:1px solid black;">
+			<img src="images/buttons/contactButton.png" style="height: 50px">
+			<img src="images/buttons/contactButton.png" style="height: 50px">
+			<div style="float:right">	
+				<a onclick=hide("contact") href="#">Close</a>
+			</div> -->
+		<!-- </div> -->
+		
+		<p class="normaltext">Hello and welcome!</p>
+		
+		<img src="images/player.gif" align="right"></img>
+		
+		<p><span class="normaltext">
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+<br>
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+<br>
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+<br>
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+<br>
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</span></p>
+	
+	<br>
+		
+		<input type="button" value="Make some noise!" href="#" onclick="start();"></input>
+		
+	<br>
+		<audio id="myAudio" controls>
+			<source src="shot.wav" type="audio/wav">
+		</audio>
+		
+	<br>
+	
+		<a href="projects.html">
+			<img src="images/roll-up.png" alt="A single cover of mine" style="width:250px;height:250px;"> </img>
+		</a>
