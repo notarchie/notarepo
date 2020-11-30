@@ -25,9 +25,10 @@
 
 .img
 {
-	border-width: 2px;	
-	border-style: solid;
-	border-color: gray;
+	height:250px;
+	width:400px;
+	padding-bottom: 3%;
+	position: relative;
 }
 
 body 
@@ -54,22 +55,56 @@ body
 .gridContainer
 {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: 25% 25% 48%;
+	grid-gap: 10px;
+	background-color: 2E4052;
+	padding: 10px;
+	
+	
+}
+
+.gridContainerTwo
+{
+	display: grid;
+	grid-template-columns: 25% 25% 48%;
 	grid-gap: 10px;
 	background-color: 2E4052;
 	padding: 10px;
 	
 }
 
+.boxThree
+{
+	margin-left:50px;
+}
+
 .gridContainer > div
 {
-	height: auto;
-	width: auto;
+	height: 75%;
+	width: 85%;
 	background-color: rgb(46,64,82);
 	text-align: center;
 	padding: 2%;
 	font-size: 30px;
+	box-shadow: 10px 10px rgb(197,213,234);
+	
 }
+
+.gridContainer > img
+{
+	float:left;
+}
+.gridContainerTwo > div
+{
+	height: 75%;
+	width: 85%;
+	background-color: rgb(46,64,82);
+	text-align: center;
+	padding: 2%;
+	font-size: 30px;
+	box-shadow: 10px 10px rgb(197,213,234);
+}
+
 /* Style the navbar */
 #menubar {
 	overflow: hidden;
@@ -88,6 +123,7 @@ body
 	padding: 16px;
 	text-decoration: none;
 }
+
 
 #mbBtn {
 	height: 48px;
