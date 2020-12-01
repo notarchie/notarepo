@@ -1,0 +1,169 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.0.5eb040c7)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 3344,
+            "type": "VEC3",
+            "max": [
+                2.2236380577087404,
+                5.002019882202148,
+                2.1557810306549074
+            ],
+            "min": [
+                -2.321868896484375,
+                -4.287988185882568,
+                -2.3897249698638918
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 3344,
+            "type": "VEC3",
+            "max": [
+                0.9999997615814209,
+                0.9999974966049194,
+                0.9999997615814209
+            ],
+            "min": [
+                -0.9999997615814209,
+                -0.9995142221450806,
+                -0.9999997615814209
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 3344,
+            "type": "VEC2",
+            "max": [
+                0.9850959777832031,
+                0.8861969709396362
+            ],
+            "min": [
+                0.015588999725878239,
+                0.07461601495742798
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 19728,
+            "type": "SCALAR",
+            "max": [
+                3343
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 185920,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 40128,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 40128,
+            "byteLength": 40128,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 80256,
+            "byteLength": 26752,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 107008,
+            "byteLength": 78912,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert2SG",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "nurbsToPoly1",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 1,
+                    "indices": 3,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "input.obj",
+            "children": [
+                1,
+                2
+            ]
+        },
+        {
+            "name": "default"
+        },
+        {
+            "name": "nurbsToPoly1",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}

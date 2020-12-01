@@ -3,7 +3,8 @@
 	<head>
 		<title>Welcome!</title>
 		<link rel="stylesheet" href="css/style.css">
- 
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 		<script>
 			function show(id)
 			{
@@ -38,6 +39,8 @@
 				
 				});
 			}
+			
+			
 			
 // When the user scrolls the page, execute menuScroll
 			window.onscroll = function()({menuScroll});
@@ -84,16 +87,21 @@
 				
 			</div>
 			<div class="gridContainerTwo">
-				<div class="boxOne" style="float:left">1
+				<div class="boxOne" style="float:left">
 				</div>
-				<div class="boxTwo" style="float:left">2
+				<div class="boxTwo" style="float:left"><model-viewer src="models/kingpeice.gltf" auto-rotate camera-controls> </model-viewer>
+					
 				</div>
 				<div class="boxThree" style="float:left">3
 				</div>
 			</div>
 		</div>
 	</div>
-	
+	<div>
+	<model-viewer src="models/kingpeice.gltf" auto-rotate camera-controls> </model-viewer>
+	</div>
+					
+
 		
 	</body>
 	
