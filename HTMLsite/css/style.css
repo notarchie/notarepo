@@ -29,6 +29,7 @@
 	width:100px;
 	padding-bottom: 0%;
 	position: absolute;
+	vertical-align: bottom
 }
 
 .imgTwo
@@ -135,6 +136,7 @@ body
 
 
 #menubar {
+	position: relative
 	overflow: hidden;
 	background-color: #759EB8;
 	font-family: coolvetica;
@@ -146,43 +148,68 @@ body
 .menubarDrop {
 	float: right;
 	text-align: center-left;
-	margin-left: 42em;
-	position: absolute;
+	margin-left: auto;
+	margin-right: 0;
+	position: relative;
 	display: inline-block;
 	background-color: #2E4052;
 	font-family: coolvetica;
 }
 
 .menubarContent {
-  display: none;
-  position: relative;
-  background-color: #759EB8;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: relative;
+	background-color: #759EB8;
+	min-width: 80px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	z-index: 99;
+	font-size: 18px;
 }
 
 .menubarContent a {
-  color: FFFFF2;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+	color: FFFFF2;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
 
 .dropbtn {
-  background-color: #759EB8;
-  color: white;
-  padding: 2px;
-  font-size: 24px;
-  border: none;
-  font-family: coolvetica;
-
+	background-color: #759EB8;
+	color: white;
+	padding: 2px;
+	font-size: 24px;
+	border: none;
+	font-family: coolvetica;
+	float: right;
+  	margin-left: auto;
+	margin-right: 0;
 }
 .menubarContent a:hover {background-color: #2E4052;}
 
 .menubarDrop:hover .menubarContent {display: block;}
 
 .MenubarDrop:hover .dropbtn {background-color: rgb(46,64,82);}
+
+#scrllBtn {
+	float:right;
+	display: solid;
+	position: relative;
+	bottom: 20px; 
+	right: 30px; 
+	z-index: 99; 
+	border: none; 
+	outline: none;
+	background-color: #759EB8; 
+	color: #FFFFF2;
+	cursor: pointer; 
+	padding: 5px;
+	border-radius: 10px; 
+	font-size: 18px;
+}
+
+#scrllBtn:hover {
+  background-color: #2E4052;
+}
 
 
 	

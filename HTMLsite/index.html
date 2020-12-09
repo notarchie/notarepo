@@ -40,25 +40,11 @@
 				});
 			}
 			
-			
-			
-// When the user scrolls the page, execute menuScroll
-			window.onscroll = function()({menuScroll});
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
-// Get the menubar
-			var menubar = document.getElementById("menubar");
-
-// Get the offset position of the manubar
-			var sticky = menubar.offsetTop;
-
-// Add the sticky class to the menubar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-			function menuScroll() {
-				if (window.pageYOffset >= sticky) {
-				menubar.classList.add("sticky")
-			} else {
-			menubar.classList.remove("sticky");
-				}
-			}
 			
 		</script>
 	</head>
@@ -67,7 +53,7 @@
 	<div id="menubar">
 	Home
 		<div class="menubarDrop" style="float=right">
-			<button class="dropbtn">Dropdown</button>
+			<button class="dropbtn">Menu</button>
 				<div class="MenubarContent">
 					<a href="#">Home</a>
 					<a href="projects.html">Projects</a>
@@ -136,13 +122,13 @@
 				</div>
 			</div>
 		</div>
+	</div>		
+	<div id="menubar">
+		Home
+		<div>
+		<button onclick="topFunction()" id="scrllBtn" title="Go to top">Return to top</button>
+		</div>
 	</div>
-	<div>
-	<model-viewer src="models/kingpeice.gltf" auto-rotate camera-controls> </model-viewer>
-	</div>
-					
-
-		
 	</body>
 	
 </html>
