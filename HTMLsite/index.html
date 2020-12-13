@@ -41,21 +41,21 @@
 			}
 			
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 			
 		</script>
 	</head>
-	<body class="content">
-		
+	<body class="body">
+
 	<div id="menubar">
 	Home
 		<div class="menubarDrop" style="float=right">
 			<button class="dropbtn">Menu</button>
 				<div class="MenubarContent">
-					<a href="#">Home</a>
+					<a href="index.html">Home</a>
 					<a href="projects.html">Projects</a>
 					<a href="#">Contact</a>
 				</div>
@@ -123,10 +123,15 @@ function topFunction() {
 			</div>
 		</div>
 	</div>		
-	<div id="menubar">
-		Home
+	<div id="footer" style="text-align: center">
+		<a href="index.html">Home</a>
+		<a href="projects.html">Projects</a>
+		<a href="#">Contact</a>
 		<div>
 		<button onclick="topFunction()" id="scrllBtn" title="Go to top">Return to top</button>
+		</div>
+		<div id="footer" style="text-align: left">
+		ArchieCMCG©
 		</div>
 	</div>
 	</body>

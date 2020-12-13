@@ -1,13 +1,86 @@
 <html>
+<script>
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 	<head>
 		<title>
 			Portfolio - Archie
 		</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/styleP.css">
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 	</head>
-	<body>
-		<model-viewer src="models/kingpeice.gltf" auto-rotate camera-controls> </model-viewer>
+	<body class="body">
+	<div id="menubar">
+	Home
+		<div class="menubarDrop" style="float=right">
+			<button class="dropbtn">Menu</button>
+				<div class="MenubarContent">
+					<a href="index.html">Home</a>
+					<a href="projects.html">Projects</a>
+					<a href="#">Contact</a>
+				</div>
+		</div>
+	</div>
+	<div id="bodybacking" style="width: 40%; height:15%; float:left;">
+		<div class="gridContainer">
+			<div class="boxOne">
+				3D Modelling and sculpting
+			</div>
+			<div class="BoxTwo">
+			generic text
+			</div>
+		</div>
+	</div>
+	<div id="bodybacking" style="width: 40%; height:15%; float:right;">
+		<div class="gridContainerMdlVwr">
+			<div class="boxMdl">
+				<model-viewer src="shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+			</div>
+		</div>
+	</div>
+	<div id="bodybacking" style="width: 40%; height:15%; float: right;">
+		<div class="gridContainer">
+			<div class="boxOne">
+				3D Modelling and sculpting
+			</div>
+		</div>
+	</div>
+	<div id="bodybacking" style="width: 40%; height:15%; float: left;">
+		<div class="gridContainer">
+			<div class="boxOne">
+				Video game design
+			</div>
+			<div class="BoxTwo">
+			generic text
+			</div>
+		</div>
+	</div>
+	<div id="bodybacking" style="width: 91%; height:15%; float: center;">
+		<div class="gridContainer">
+			<div class="boxOne">
+				Experience and Skills
+			</div>
+			<div class="BoxTwo">
+			generic text
+			</div>
+		</div>
+	</div>
+	<br>
+	<div style="clear: both"></div>
+	<div id="footer" style="text-align: center">
+		<a href="index.html">Home</a>
+		<a href="projects.html">Projects</a>
+		<a href="#">Contact</a>
+		<div>
+		<button onclick="topFunction()" id="scrllBtn" title="Go to top">Return to top</button>
+		</div>
+		<div id="footer" style="text-align: left">
+		ArchieCMCG©
+		</div>
+	</div>
 	</body>
 </html>
