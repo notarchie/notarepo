@@ -4,6 +4,30 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+var i = 0; 		
+var images = [];	
+var time = 3000;	//time between imgs
+	 
+// images
+images[0] = "images/gdimg1.jpg";
+images[1] = "images/gdimg2.jpg";
+images[2] = "images/gdimg3.jpg";
+//images[3] = "images/gdimg4";
+
+function changeImg(){
+	document.slide.src = images[i];
+
+	if(i < images.length - 1){
+	  i++; 
+	} else {
+		i = 0;
+	}
+
+	setTimeout("changeImg()", time);
+}
+
+window.onload=changeImg;
 </script>
 	<head>
 		<title>
@@ -30,45 +54,54 @@ function topFunction() {
 			<div class="boxOne">
 				3D Modelling and sculpting
 			</div>
-			<div class="BoxTwo">
-			generic text
+			<div class="BoxTwo" style="height: 200px;">
+			I have began 3D modelling for the first time this year as part of my course,
+			I had dabbled in it before when I was much younger however only now have I had the chance to properly
+			get started. On top of just modelling, I am learning to sculpt and later texture with lighting.
 			</div>
 		</div>
 	</div>
-	<div id="bodybacking" style="width: 40%; height:15%; float:right;">
+	<div id="bodybacking" style="width: 30%; height:15%; float:right;">
 		<div class="gridContainerMdlVwr">
 			<div class="boxMdl">
-				<model-viewer src="shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+				<model-viewer style=" width: 560px; height: 200px;" src="/models/kingpeice.gltf" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
 			</div>
 		</div>
 	</div>
-	<div id="bodybacking" style="width: 40%; height:15%; float: right;">
-		<div class="gridContainer">
-			<div class="boxOne">
-				3D Modelling and sculpting
+	<div id="bodybacking" style="width: 30%; height:15%; float: right;">
+		<div class="gridContainerSS">
+			<div>
+			<img class="slideshow" name="slide" width="600" height="200" />
 			</div>
 		</div>
 	</div>
 	<div id="bodybacking" style="width: 40%; height:15%; float: left;">
 		<div class="gridContainer">
 			<div class="boxOne">
-				Video game design
+				Game Design Principles
 			</div>
-			<div class="BoxTwo">
-			generic text
+			<div class="BoxTwo" style="height: 200px;">
+				Another module that I have began at my course in BU regards the principles of game design,
+				ranging from the various essays of code that make up a game to the feelings they invoke in the player 
+				all in an attempt to discover what it is that we find 'fun'.
 			</div>
 		</div>
 	</div>
 	<div id="bodybacking" style="width: 91%; height:15%; float: center;">
-		<div class="gridContainer">
+		<div class="gridContainerskl">
 			<div class="boxOne">
 				Experience and Skills
 			</div>
 			<div class="BoxTwo">
-			generic text
+				My work related experience derives from my previous jobs as a barman, waiter and construction worker.
+				However my academic experience is much less hands-on and more involved a lot of essay writing, on topics such as
+				the structure of a government, the structure of a brain or the structure of a spanish film.
+				My hobbies which have translated into skills include computers, I built one when I was young and have fostered
+				my love for technology since. I have experience in many programs strecthing from Microsoft Office to Photoshop to Fruity Loops 12 (A music DAW)
 			</div>
 		</div>
 	</div>
+	
 	<br>
 	<div style="clear: both"></div>
 	<div id="footer" style="text-align: center">
@@ -81,6 +114,7 @@ function topFunction() {
 		<div id="footer" style="text-align: left">
 		ArchieCMCG©
 		</div>
+		<div id="footer"></div>
 	</div>
 	</body>
 </html>

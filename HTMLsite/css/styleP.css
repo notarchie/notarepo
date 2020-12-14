@@ -22,7 +22,10 @@ min-height:100%;
 	font-family: coolvetica;
 	font-size: 18;
 	color: FFFFF2;
-	padding-left: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
 	padding-top:5px;
 	padding-bottom: 5px;
 	#vertical-align: bottom;
@@ -80,8 +83,8 @@ min-height:100%;
 	height: auto;
 	padding-left: 2em;
 	padding-right: 2em;
-	padding-bottom: 4em;
-	padding-top: 4em;
+	padding-bottom: 6em;
+	padding-top: 2em;
 	background-color: 759EB8;
 	margin-left: 3%;
 	margin-right: 3%;
@@ -90,6 +93,8 @@ min-height:100%;
 	box-shadow: 10px 10px #2E4052;
 	overflow: auto;
 }	
+
+/* Menu bar styling */
 
 #menubar {
 	position: relative
@@ -146,6 +151,9 @@ min-height:100%;
 
 .MenubarDrop:hover .dropbtn {background-color: rgb(46,64,82);}
 
+
+/* Return to top button */
+
 #scrllBtn {
 	float:right;
 	display: solid;
@@ -170,11 +178,14 @@ min-height:100%;
 }
 
 
+/* Container divs */
+
+
 .gridContainer
 {
-	display: grid;
+	display: flex;
 	grid-template-columns: 30% 70%;
-	grid-template-rows: 90% 90%;
+	grid-template-rows: 100%;
 	grid-gap: 50px;
 	background-color: 2E4052;
 	padding: 5px;
@@ -185,12 +196,43 @@ min-height:100%;
 	
 }
 
+.gridContainerSS
+{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 100%;
+	grid-gap: 25px;
+	background-color: 2E4052;
+	padding: 5px;
+	font-family: coolvetica;
+	font-size: 24px;
+	width: 100%;
+	height:80%;
+	overflow: display;
+	
+}
+
 .gridContainerMdlVwr
 {
 	display: grid;
 	grid-template-columns: 100%%;
 	grid-template-rows: 90% 90%;
 	grid-gap: 5px;
+	background-color: 2E4052;
+	padding: 5px;
+	font-family: coolvetica;
+	font-size: 24px;
+	width: 100%;
+	height:80%;
+	
+}
+
+.gridContainerskl
+{
+	display: grid;
+	grid-template-columns: 10% 85%;
+	grid-template-rows: 90% 90%;
+	grid-gap: 50px;
 	background-color: 2E4052;
 	padding: 5px;
 	font-family: coolvetica;
@@ -235,17 +277,71 @@ min-height:100%;
 	
 }
 
+.gridContainerskl > div
+{
+	height: 75%;
+	width: 85%;
+	background-color: rgb(46,64,82);
+	text-align: center;
+	padding: 2%;
+	font-size: 20px;
+	box-shadow: 10px 10px rgb(197,213,234);
+	float: left;
+	text-align: left;
+	
+}
+
+.gridContainerMdlVwr > div
+{
+	height: 100%;
+	width: 85%;
+	#background-color: rgb(46,64,82);
+	text-align: center;
+	padding: 2%;
+	font-size: 20px;
+	#box-shadow: 10px 10px rgb(197,213,234);
+	float: left;
+	text-align: left;
+	
+}
+
+.gridContainerSS > div
+{
+	height: 100%;
+	width: 100%;
+	
+	text-align: center;
+	padding: 0%;
+	font-size: 20px;
+	float: center;
+	text-align: left;
+	border-radius: 20px;
+}
+
 .gridContainer > img
 {
 	vertical-align: bottom;
 }
 
+/* Model Viewer */
+
 .mdlvwr
 {
+	padding 50px;
 	float: right;
 	height: 240px;
 	width: 240px;
-	position: absolute;
+	position: relative;
 }
 
+/* Slideshow */
+.slideshow{
+	position: auto;
+	float: center;
+	border-style: double;
+	border-color: rgb(46,64,82);
+	border-radius: 20px;
+	vertical-align: top;
+
+/* Animation */
 
