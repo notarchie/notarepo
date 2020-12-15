@@ -2,6 +2,97 @@
 <head>
 <link rel="stylesheet" href="css/style.css">
 <script>
+		var x = 10;
+		var playerImage;
+		var frameNumber = 0;
+		var playerPosX = 10;
+		var playerPosY = 20;
+		
+			function load()
+			{
+			// Allocate a new image and assign it to our previous variable
+				playerImage = new Image();
+			// Set the src (the path of the image). This will be loaded by the
+			// browser but may not be loaded immediately
+				playerImage.src = "images/sSheet.png";
+			}
+
+		
+			function main()
+			{
+				load();
+			
+			// Get a reference to our canvas by the specified ID
+				var canvas = document.getElementById("canvas");
+			// Set the width and height
+				canvas.width = 240;
+				canvas.height = 480;
+				
+			// Create the 2D drawing context (Context = pen) 
+				var ctx = canvas.getContext('2d');
+				
+			// Call our draw function, passing in the context
+				draw(ctx);
+
+			}
+			var sourceheight = 20;
+			function draw(ctx)
+			{
+			// Set clear color to BACKGROUND and fetch width and height from canvas
+				ctx.fillStyle = 'rgb(46,64,82)';
+				ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+			var sourceheight = 20
+			var frameWidth = playerImage.width / 4;
+			var frameHeight = playerImage.height / 4;
+			// image, sourcex, sourcey, 
+			//sourcewidth, sourceheight,
+			// destx, desty, 
+			//destwidth, destheight
+				ctx.drawImage(playerImage, 
+				frameWidth * frameNumber, sourceheight,
+				frameWidth, frameHeight,
+				playerPosX, playerPosY, 200, 200);
+
+			// Increment x by 1
+				x++;
+			// Ask the browser to call this function again as soon as it can
+				window.requestAnimationFrame(function(){draw(ctx);});
+				
+				if (x % 10 ==0)
+				{
+					frameNumber++
+				}
+				
+				if (frameNumber > 3)
+				{
+					frameNumber = 0
+				}
+			}
+			
+			function keydown(event)
+			{
+				if(event.key == "ArrowLeft")
+				{
+					playerPosX--;
+				}
+				else if(event.key == "ArrowRight")
+				{		
+					playerPosX++;
+				}
+				else if(event.key == "ArrowDown")
+				{
+					playerPosY++;
+				}
+				else if(event.key == "ArrowUp")
+				{
+					playerPosY--;
+				}
+			}
+
+		
+	
+window.addEventListener("keydown", keydown);
+window.onload = main;
 </script>
 <title>
 Contact - Archie
@@ -19,9 +110,9 @@ Contact - Archie
 				</div>
 		</div>
 	</div>
-<div id="bodyBacking">
+<div id="bodyBacking" style="height: 70%">
 	<div class="flexContainer">
-		<div class="boxOne">
+		<div>
 			<div id="header">
 				Where to find me	
 			</div>
@@ -46,8 +137,9 @@ Contact - Archie
 		<div>
 		07975 711204
 		</div>
-		<div>
-		</div>
+		
+		<canvas id="canvas"></canvas>
+		
 	</div>
 </div>
 	<div id="footer" style="text-align: center">
