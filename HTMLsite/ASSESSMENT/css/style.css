@@ -16,7 +16,7 @@
 	font-family: coolvetica;
 	font-size: 18;
 	color: FFFFF2;
-	padding-left: 10px;
+	padding-left: 0px;
 	padding-top:5px;
 	padding-bottom: 5px;
 	vertical-align: bottom;
@@ -82,6 +82,30 @@
 	box-shadow: 10px 10px #2E4052;
 }	
 
+.flexContainer
+{
+	display: flex;
+	width: 100%;
+	grid-gap: 20px;
+	background-color: 2E4052;
+	padding: 10px;
+	font-family: coolvetica;
+	font-size: 16px;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: space-around;
+}
+	
+	.flexContainer > div
+{
+	width: 20%;
+	height: 50%;
+	background-color: rgb(46,64,82);
+	text-align: center;
+	padding: 2%;
+	font-size: 20px;
+	box-shadow: 10px 10px rgb(197,213,234);
+}
 .gridContainer
 {
 	display: grid;
@@ -220,7 +244,9 @@
   	margin-left: auto;
 	margin-right: 0;
 }
-.menubarContent a:hover {background-color: #2E4052;}
+.menubarContent a:hover {
+	background-color: #2E4052;
+	transition: all 0.5s ease-in;}
 
 .menubarDrop:hover .menubarContent {display: block;}
 
