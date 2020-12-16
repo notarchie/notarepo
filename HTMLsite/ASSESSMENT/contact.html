@@ -26,7 +26,7 @@
 				var canvas = document.getElementById("canvas");
 			// Set the width and height
 				canvas.width = 240;
-				canvas.height = 480;
+				canvas.height = 360;
 				
 			// Create the 2D drawing context (Context = pen) 
 				var ctx = canvas.getContext('2d');
@@ -89,8 +89,29 @@
 				}
 			}
 
-		
-	
+function copyDetails() {
+  var copyText = document.getElementById("input");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function copyDetails2() {
+  var copyText = document.getElementById("input2");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function copyDetails3() {
+  var copyText = document.getElementById("input3");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
 window.addEventListener("keydown", keydown);
 window.onload = main;
 </script>
@@ -98,7 +119,7 @@ window.onload = main;
 Contact - Archie
 </title>
 </head>
-<body class="body">
+<body class="body" style="background-image: url('images/ocean.jpg');">
 	<div id="menubar">
 		Contact
 		<div class="menubarDrop" style="float=right">
@@ -113,9 +134,7 @@ Contact - Archie
 <div id="bodyBacking" style="height: 70%">
 	<div class="flexContainer">
 		<div>
-			<div id="header">
-				Where to find me	
-			</div>
+		Where to find me	
 		</div>
 		<div>
 		Email:
@@ -127,19 +146,32 @@ Contact - Archie
 		Phone Number:
 		</div>
 		<div>
+		Click my details to copy!
 		</div>
 		<div>
-		archiecarkmcg@gmail.com
+		<button onclick="copyDetails()" id="infButton" >archiecarkmcg@gmail.com</button>
+		<input type="text" value="archiecarkmcg@gmail.com" id="input"></input>
 		</div>
 		<div>
-		s5300923@bournemouth.ac.uk
+		<button onclick="copyDetails2()" id="infButton">s5300923@bournemouth.ac.uk</button>
+		<input type="text" value="s5300923@bournemouth.ac.uk" id="input2"></input>
 		</div>
 		<div>
-		07975 711204
+		<button onclick="copyDetails3()" id="infButton">07975 711204</button>
+		<input type="text" value="07975711204" id="input3"></input>
 		</div>
-		
+		<div>
+		<marquee> Thanks for visiting! </marquee>
+		</div>
+		<div>
 		<canvas id="canvas"></canvas>
-		
+		</div>
+		<div>
+		<marquee> Dont hesistate to contact me! </marquee>
+		</div>
+	</div>
+	<div style="text-align: center;">
+		(p.s) move with arrow keys
 	</div>
 </div>
 	<div id="footer" style="text-align: center">

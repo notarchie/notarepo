@@ -2,6 +2,13 @@ html {
 min-height:100%;	
 }
 
+.body{
+	color: FFFFF2;
+	background-image: url("images/ocean.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
 
 #header
 {
@@ -79,6 +86,7 @@ min-height:100%;
 
 #bodyBacking
 {
+	opacity: 0.95;
 	width: auto;
 	height: auto;
 	padding-left: 2em;
